@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.APT3060Labs"
+        tools:targetApi="31">
+        <!--        <activity-->
+        <!--            android:name=".Lab6"-->
+        <!--            android:exported="false" />-->
+
+        <activity
+            android:name=".Lab6"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".quiz1.ViewStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quiz1.StudentRegistrationActivity"
+            android:exported="false" />
+
+        <!-- <activity -->
+        <!-- android:name=".quiz1.StudentRegistrationActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name=".quiz1.MainActivity"
+            android:exported="false" />
+
+        <!--        <activity-->
+        <!--            android:name=".quiz1.MainActivity"-->
+        <!--            android:exported="true">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+
+        <activity
+            android:name=".lab5.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lab5.BalanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lab5.WithdrawalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lab5.DepositActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lab5.LoginActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".lab5.LoginActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Lab1"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Lab1" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Lab2ListView"
+            android:exported="false" />
+        <activity
+            android:name=".Lab2RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".Lab2StringBuffer"
+            android:exported="false" />
+        <activity
+            android:name=".Lab3"
+            android:exported="false" />
+        <activity
+            android:name=".Lab4"
+            android:exported="false" />
+    </application>
+
+</manifest>
